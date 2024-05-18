@@ -38,8 +38,6 @@ from http import cookiejar
 from urllib3.exceptions import InsecureRequestWarning
 import hashlib
 import uuid
-import telegram
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 import time
 import sys
 import requests
