@@ -14,7 +14,7 @@ import sqlite3
 import hashlib
 import requests
 import datetime
-
+import google.generativeai as genai
 import sys
 import threading
 import logging
