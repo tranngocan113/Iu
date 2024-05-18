@@ -5,3 +5,4 @@ pytube
 telebot
 psutil
 beautifulsoup4
+google.generativeai
