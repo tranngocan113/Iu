@@ -18,8 +18,6 @@ import google.generativeai as genai
 import sys
 import threading
 import logging
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import time
 import sys
 import subprocess
@@ -395,24 +393,7 @@ def diggory(message):
     time.sleep(20)
 
     bot.delete_message(chat_id=message.chat.id, message_id=sent_message.message_id)
-@bot.message_handler(commands=['andzvcl'])
-def anhwed(message):
-    try:
-        url = message.text.split()[1]
-        ngocan = Options()
-        ngocan.add_argument("--headless")
-        ngocan.add_argument("--start-maximized")  
-        ngocan.add_argument("--window-size=1050,655") 
-        anvip = webdriver.Chrome(options=ngocan)
-        anvip.get(url)
-        annvip = '/sdcard/screenshot.png'
-        anvip.save_screenshot(annvip)
-        message_text = ' '.join(message.text.split()[2:])
-        anvip.quit()
-        with open(annvip, 'rb') as photo:
-            bot.send_photo(chat_id='-1001802793115', photo=photo, caption=message_text)
-    except Exception as e:
-        bot.reply_to(message, f"Có lỗi xảy ra: {str(e)}")
+
 @bot.message_handler(commands=['tt'])
 def luuvideo_tiktok(message):
   if len(message.text.split()) == 1:
