@@ -1,0 +1,8 @@
+requests
+urllib3
+google-api-python-client
+pytube
+telegram
+psutil
+selenium
+beautifulsoup4
